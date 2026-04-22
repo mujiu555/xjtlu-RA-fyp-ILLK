@@ -19,7 +19,7 @@ def translate_from(file_path):
             idx = sample["idx"]
             file_name = sample["file_name"]
             cwe = sample["cwe"]
-            code = sample["code"]["source"]
+            code = sample["issue_code"]["source"]
             to = {"idx": idx, "file_name": file_name, "cwe": cwe, "code": code}
             return to
 
